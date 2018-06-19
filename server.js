@@ -53,14 +53,14 @@ app.use(bodyParser.json());
 // Passport stuff
 ////////////////////////////////////////////////////////
 //Recipe2.sync();
-// Posts.sync();
-// Steps.sync();
-// Ingredients.sync();
-// Recipe.sync();
-// Users.sync({
-//     force: true
-// });
-// express.static(path.join(__dirname, 'public/assets/js/logic.js'));
+Posts.sync();
+Steps.sync();
+Ingredients.sync();
+Recipe.sync();
+Users.sync({
+    force: true
+});
+express.static(path.join(__dirname, 'public/assets/js/logic.js'));
 
 app.use(bodyParser.urlencoded({
     extended: false
